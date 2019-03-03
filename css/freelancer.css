@@ -4,14 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 p {
   font-size: 20px;
 }
 
-.img-responsive{
+.img-responsive {
   border-radius: 50%;
   width: 25%;
   border-width: 2px solid white;
@@ -65,23 +65,23 @@ hr.star-light:after {
   color: white;
 }
 hr.star-primary {
-  border-color: #2C3E50;
+  border-color: #2c3e50;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #2C3E50;
+  color: #2c3e50;
 }
 .img-centered {
   margin: 0 auto;
 }
 header {
+  min-height: 100vh;
   text-align: center;
   background: #6a99a9;
   color: white;
 }
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 5%;
 }
 header img {
   display: block;
@@ -110,7 +110,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
+  background: #2c3e50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -185,6 +185,7 @@ header .intro-text .skills {
   }
 }
 section {
+  min-height: 100vh;
   padding: 100px 0;
 }
 section h2 {
@@ -281,10 +282,10 @@ section.success {
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
-  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
-  -moz-transition: top 0.3s ease,opacity 0.3s ease;
-  -ms-transition: top 0.3s ease,opacity 0.3s ease;
-  transition: top 0.3s ease,opacity 0.3s ease;
+  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+  -moz-transition: top 0.3s ease, opacity 0.3s ease;
+  -ms-transition: top 0.3s ease, opacity 0.3s ease;
+  transition: top 0.3s ease, opacity 0.3s ease;
 }
 .floating-label-form-group:not(:first-child) {
   padding-left: 14px;
@@ -308,7 +309,7 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #2C3E50;
+  background-color: #2c3e50;
 }
 footer .footer-col {
   margin-bottom: 50px;
@@ -335,8 +336,8 @@ footer .footer-below {
 }
 .btn-primary {
   color: white;
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #2c3e50;
+  border-color: #2c3e50;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -368,11 +369,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #2c3e50;
+  border-color: #2c3e50;
 }
 .btn-primary .badge {
-  color: #2C3E50;
+  color: #2c3e50;
   background-color: white;
 }
 .btn-success {
@@ -486,7 +487,7 @@ fieldset[disabled] .btn-success.active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #2C3E50;
+  background-color: #2c3e50;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -497,7 +498,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #2C3E50;
+  background-color: #2c3e50;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
