@@ -93,15 +93,6 @@ const About = () => {
                       hello@edilson.dev
                     </a>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <span className="text-sm font-medium">📱</span>
-                    <a 
-                      href="tel:+5562981889936" 
-                      className="hover:text-primary transition-smooth"
-                    >
-                      +55 62 98188-9936
-                    </a>
-                  </div>
                 </div>
               </CardContent>
             </Card>

@@ -12,13 +12,6 @@ const Contact = () => {
       description: "Best for project inquiries"
     },
     {
-      icon: Phone,
-      title: "Phone",
-      value: "+55 62 98188-9936",
-      href: "tel:+5562981889936",
-      description: "Available during business hours"
-    },
-    {
       icon: Linkedin,
       title: "LinkedIn",
       value: "in/edilsonborges",
