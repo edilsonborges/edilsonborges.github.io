@@ -34,6 +34,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="border-hero-foreground/20 hover:bg-hero-foreground/10 transition-smooth"
+              onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View My Work
             </Button>
