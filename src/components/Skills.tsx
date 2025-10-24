@@ -1,8 +1,19 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Wrench, Palette, Smartphone, Database } from "lucide-react";
+import { Wrench, Palette, Smartphone, Database, Bot } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
+    {
+      title: "AI & Machine Learning",
+      icon: Bot,
+      skills: [
+        { name: "LLM Models", level: 90, description: "OpenAI, Ollama, Deepseek, Claude" },
+        { name: "AI Services", level: 88, description: "Openrouter, Hugging Face" },
+        { name: "Workflow", level: 85, description: "LangChain, N8N, TensorFlow" },
+        { name: "RAG", level: 80, description: "Openwebui, Docling, SentenceTransformers, ChromaDB" },
+        { name: "Computer Vision (CV)", level: 80, description: "CNNs, OpenCV, YOLO, Hailo-8" },
+      ]
+    },
     {
       title: "Backend Development",
       icon: Wrench,
@@ -109,7 +120,7 @@ const Skills = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
                 {[
                   "Docker", "Git", "Redis", "MongoDB", "Firebase", "GCP",
-                  "NextJS", "Serverless", "Socket.io", "REST APIs", "GraphQL", "Microservices"
+                  "NextJS", "Serverless", "Web Socket", "REST APIs", "GraphQL", "Microservices"
                 ].map((tech) => (
                   <div 
                     key={tech} 
