@@ -15,4 +15,12 @@ export default defineConfig({
     },
   },
   base: "/",
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+        busca_plantix: path.resolve(__dirname, "busca-plantix/index.html"),
+      },
+    },
+  },
 });
