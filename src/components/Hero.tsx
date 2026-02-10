@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, FolderOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -21,22 +22,25 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-            <Button 
-              variant="default" 
-              size="lg" 
+            <Button
+              variant="default"
+              size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-smooth group"
             >
               <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Get In Touch
             </Button>
-            
-            <Button 
-              variant="outline" 
+
+            <Button
+              asChild
+              variant="outline"
               size="lg"
               className="border-hero-foreground/20 hover:bg-hero-foreground/10 transition-smooth"
-              onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              View My Work
+              <Link to="/portfolio">
+                <FolderOpen className="mr-2 h-5 w-5" />
+                Portfolio
+              </Link>
             </Button>
           </div>
           
@@ -58,17 +62,11 @@ const Hero = () => {
             >
               <Linkedin className="h-6 w-6" />
             </a>
-            <a 
-              href="mailto:hello@edilson.dev" 
+            <a
+              href="mailto:hello@edilson.dev"
               className="text-hero-foreground/60 hover:text-primary-glow transition-smooth transform hover:scale-110"
             >
               <Mail className="h-6 w-6" />
-            </a>
-            <a 
-              href="tel:+5562981889936" 
-              className="text-hero-foreground/60 hover:text-primary-glow transition-smooth transform hover:scale-110"
-            >
-              <Phone className="h-6 w-6" />
             </a>
           </div>
         </div>
