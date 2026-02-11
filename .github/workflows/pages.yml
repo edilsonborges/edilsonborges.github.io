@@ -44,6 +44,22 @@ jobs:
           npm run build
           cp dist/index.html dist/404.html || true
 
+      - name: Create SPA route files
+        run: |
+          # Privacy policy routes need real index.html files so crawlers get 200 (not 404)
+          routes=(
+            "portfolio"
+            "portfolio/niver"
+            "portfolio/niver/privacy/ios"
+            "portfolio/niver/privacy/android"
+            "portfolio/niver/ios/privacy"
+            "portfolio/niver/android/privacy"
+          )
+          for route in "${routes[@]}"; do
+            mkdir -p "dist/$route"
+            cp dist/index.html "dist/$route/index.html"
+          done
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
