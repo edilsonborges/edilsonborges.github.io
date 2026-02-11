@@ -26,6 +26,8 @@ const App = () => (
           <Route path="/portfolio/niver" element={<NiverApp />} />
           <Route path="/portfolio/niver/privacy/ios" element={<NiverPrivacyIos />} />
           <Route path="/portfolio/niver/privacy/android" element={<NiverPrivacyAndroid />} />
+          <Route path="/portfolio/niver/ios/privacy" element={<NiverPrivacyIos />} />
+          <Route path="/portfolio/niver/android/privacy" element={<NiverPrivacyAndroid />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
