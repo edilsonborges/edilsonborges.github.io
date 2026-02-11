@@ -25,8 +25,8 @@ Node version: 20.19.0 (see `.nvmrc`)
 - `/busca-plantix` → `src/pages/BuscaPlantix.tsx`
 - `/portfolio` → `src/pages/Portfolio.tsx` (grid of project cards)
 - `/portfolio/niver` → `src/pages/NiverApp.tsx` (Niver app marketing page: hero, features, privacy links, support)
-- `/portfolio/niver/privacy/ios` → `src/pages/NiverPrivacyIos.tsx` (iOS privacy policy — SwiftUI/SwiftData/iCloud)
-- `/portfolio/niver/privacy/android` → `src/pages/NiverPrivacyAndroid.tsx` (Android privacy policy — Room/SQLite)
+- `/portfolio/niver/privacy/ios` (+ `/portfolio/niver/ios/privacy`) → `src/pages/NiverPrivacyIos.tsx` (iOS privacy policy — SwiftUI/SwiftData)
+- `/portfolio/niver/privacy/android` (+ `/portfolio/niver/android/privacy`) → `src/pages/NiverPrivacyAndroid.tsx` (Android privacy policy — Room/SQLite)
 
 **Portfolio pattern:** To add a new product to the portfolio, add an entry to the `projects` array in `src/pages/Portfolio.tsx`, create a product page in `src/pages/`, and register the route in `App.tsx`. Use `/portfolio/niver` as the reference implementation. A Claude Code command exists at `.claude/commands/new-portfolio-product.md` to automate this.
 
@@ -52,4 +52,10 @@ Strict mode is off. `noImplicitAny`, `strictNullChecks`, `noUnusedLocals`, and `
 
 ## Deployment
 
-GitHub Actions workflow (`.github/workflows/pages.yml`) builds and deploys to GitHub Pages on push to `main`. The build step copies `dist/index.html` to `dist/404.html` for SPA client-side routing support.
+GitHub Actions workflow (`.github/workflows/pages.yml`) builds and deploys to GitHub Pages on push to `main`. The build step:
+1. Copies `dist/index.html` to `dist/404.html` for SPA client-side routing fallback
+2. Creates `index.html` copies in each SPA route directory (e.g., `dist/portfolio/niver/privacy/android/index.html`) so that external crawlers (Google Play, App Store) receive HTTP 200 instead of 404
+
+**Important:** When adding new SPA routes that need to be crawled externally (e.g., privacy policies for app stores), add the route path to the `routes` array in the "Create SPA route files" step of `.github/workflows/pages.yml`.
+
+**Icons:** Brand icons (Apple, Android) use `react-icons` (`FaApple` from `react-icons/fa`, `DiAndroid` from `react-icons/di`). UI icons use `lucide-react`.
