@@ -136,6 +136,7 @@ const EstoqueDomesticoApp = () => {
           <div className="grid sm:grid-cols-2 gap-6 max-w-md mx-auto">
             <Link
               to="/portfolio/estoque-domestico/privacy/ios"
+              data-umami-event="privacy-estoque-domestico-ios"
               className="bg-section rounded-2xl p-6 shadow-card hover:shadow-glow transition-smooth text-center"
             >
               <FaApple className="h-8 w-8 text-foreground mx-auto mb-2" />
@@ -166,6 +167,7 @@ const EstoqueDomesticoApp = () => {
           </p>
           <a
             href="mailto:contato@edilson.dev"
+            data-umami-event="support-estoque-domestico"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-medium shadow-glow transition-smooth"
           >
             <Mail className="h-5 w-5" />
