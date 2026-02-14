@@ -95,6 +95,7 @@ const NiverApp = () => {
                   href="https://apps.apple.com/br/app/niver/id6759010450"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-umami-event="download-niver-ios"
                   className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-hero-foreground px-5 py-3 rounded-xl font-medium transition-smooth"
                 >
                   <FaApple className="h-5 w-5" />
@@ -104,6 +105,7 @@ const NiverApp = () => {
                   href="https://play.google.com/store/apps/details?id=com.edilson.niver"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-umami-event="download-niver-android"
                   className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-hero-foreground px-5 py-3 rounded-xl font-medium transition-smooth"
                 >
                   <DiAndroid className="h-5 w-5" />
