@@ -90,6 +90,26 @@ const NiverApp = () => {
                 O jeito mais fácil e bonito de lembrar dos aniversários de quem
                 você gosta. Disponível para iPhone, iPad e Android.
               </p>
+              <div className="flex flex-wrap gap-4 mt-6 justify-center sm:justify-start">
+                <a
+                  href="https://apps.apple.com/br/app/niver/id6759010450"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-hero-foreground px-5 py-3 rounded-xl font-medium transition-smooth"
+                >
+                  <FaApple className="h-5 w-5" />
+                  App Store
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.edilson.niver"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-hero-foreground px-5 py-3 rounded-xl font-medium transition-smooth"
+                >
+                  <DiAndroid className="h-5 w-5" />
+                  Google Play
+                </a>
+              </div>
             </div>
           </div>
         </div>
