@@ -54,6 +54,12 @@ jobs:
             "portfolio/niver/privacy/android"
             "portfolio/niver/ios/privacy"
             "portfolio/niver/android/privacy"
+            "portfolio/estoque-domestico"
+            "portfolio/estoque-domestico/privacy/ios"
+            "portfolio/estoque-domestico/ios/privacy"
+            "portfolio/farmacia-domestica"
+            "portfolio/farmacia-domestica/privacy/ios"
+            "portfolio/farmacia-domestica/ios/privacy"
           )
           for route in "${routes[@]}"; do
             mkdir -p "dist/$route"

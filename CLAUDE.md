@@ -27,6 +27,10 @@ Node version: 20.19.0 (see `.nvmrc`)
 - `/portfolio/niver` → `src/pages/NiverApp.tsx` (Niver app marketing page: hero, features, privacy links, support)
 - `/portfolio/niver/privacy/ios` (+ `/portfolio/niver/ios/privacy`) → `src/pages/NiverPrivacyIos.tsx` (iOS privacy policy — SwiftUI/SwiftData)
 - `/portfolio/niver/privacy/android` (+ `/portfolio/niver/android/privacy`) → `src/pages/NiverPrivacyAndroid.tsx` (Android privacy policy — Room/SQLite)
+- `/portfolio/estoque-domestico` → `src/pages/EstoqueDomesticoApp.tsx` (Estoque Doméstico marketing page — iOS only, Android "em breve")
+- `/portfolio/estoque-domestico/privacy/ios` (+ `/portfolio/estoque-domestico/ios/privacy`) → `src/pages/EstoqueDomesticoPrivacyIos.tsx` (iOS privacy policy — SwiftUI/SwiftData)
+- `/portfolio/farmacia-domestica` → `src/pages/FarmaciaDomesticaApp.tsx` (Farmácia Doméstica marketing page — iOS only, Android "em breve")
+- `/portfolio/farmacia-domestica/privacy/ios` (+ `/portfolio/farmacia-domestica/ios/privacy`) → `src/pages/FarmaciaDomesticaPrivacyIos.tsx` (iOS privacy policy — SwiftUI/SwiftData/CloudKit)
 
 **Portfolio pattern:** To add a new product to the portfolio, add an entry to the `projects` array in `src/pages/Portfolio.tsx`, create a product page in `src/pages/`, and register the route in `App.tsx`. Use `/portfolio/niver` as the reference implementation. A Claude Code command exists at `.claude/commands/new-portfolio-product.md` to automate this.
 

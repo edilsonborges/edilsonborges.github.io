@@ -10,6 +10,10 @@ import Portfolio from "./pages/Portfolio";
 import NiverApp from "./pages/NiverApp";
 import NiverPrivacyIos from "./pages/NiverPrivacyIos";
 import NiverPrivacyAndroid from "./pages/NiverPrivacyAndroid";
+import EstoqueDomesticoApp from "./pages/EstoqueDomesticoApp";
+import EstoqueDomesticoPrivacyIos from "./pages/EstoqueDomesticoPrivacyIos";
+import FarmaciaDomesticaApp from "./pages/FarmaciaDomesticaApp";
+import FarmaciaDomesticaPrivacyIos from "./pages/FarmaciaDomesticaPrivacyIos";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +32,12 @@ const App = () => (
           <Route path="/portfolio/niver/privacy/android" element={<NiverPrivacyAndroid />} />
           <Route path="/portfolio/niver/ios/privacy" element={<NiverPrivacyIos />} />
           <Route path="/portfolio/niver/android/privacy" element={<NiverPrivacyAndroid />} />
+          <Route path="/portfolio/estoque-domestico" element={<EstoqueDomesticoApp />} />
+          <Route path="/portfolio/estoque-domestico/privacy/ios" element={<EstoqueDomesticoPrivacyIos />} />
+          <Route path="/portfolio/estoque-domestico/ios/privacy" element={<EstoqueDomesticoPrivacyIos />} />
+          <Route path="/portfolio/farmacia-domestica" element={<FarmaciaDomesticaApp />} />
+          <Route path="/portfolio/farmacia-domestica/privacy/ios" element={<FarmaciaDomesticaPrivacyIos />} />
+          <Route path="/portfolio/farmacia-domestica/ios/privacy" element={<FarmaciaDomesticaPrivacyIos />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

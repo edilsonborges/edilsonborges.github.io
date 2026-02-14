@@ -13,6 +13,24 @@ const projects = [
     href: "/portfolio/niver",
     platforms: ["ios", "android"],
   },
+  {
+    name: "Estoque Doméstico",
+    subtitle: "Controle de validade e estoque",
+    description:
+      "Controle os alimentos da sua casa, evite desperdício e economize dinheiro. Escaneie códigos de barras e receba alertas.",
+    icon: "/assets/estoque-domestico-icon.png",
+    href: "/portfolio/estoque-domestico",
+    platforms: ["ios"],
+  },
+  {
+    name: "Farmácia Doméstica",
+    subtitle: "Gestão de medicamentos em casa",
+    description:
+      "Controle medicamentos com scanner de código de barras, alertas de validade, assistente com IA e sincronização familiar.",
+    icon: "/assets/farmacia-domestica-icon.png",
+    href: "/portfolio/farmacia-domestica",
+    platforms: ["ios"],
+  },
 ];
 
 const Portfolio = () => {
@@ -32,7 +50,7 @@ const Portfolio = () => {
             Portfolio
           </h1>
           <p className="text-xl text-hero-foreground/70 mt-4">
-            Projetos e aplicativos que desenvolvi.
+            Ideias que transformei em produto.
           </p>
         </div>
       </section>
