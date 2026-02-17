@@ -63,6 +63,9 @@ jobs:
             "portfolio/hinos-fc"
             "portfolio/hinos-fc/privacy/ios"
             "portfolio/hinos-fc/ios/privacy"
+            "portfolio/zapsticker"
+            "portfolio/zapsticker/privacy/ios"
+            "portfolio/zapsticker/ios/privacy"
           )
           for route in "${routes[@]}"; do
             mkdir -p "dist/$route"

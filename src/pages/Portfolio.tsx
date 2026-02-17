@@ -40,6 +40,15 @@ const projects = [
     href: "/portfolio/hinos-fc",
     platforms: ["ios"],
   },
+  {
+    name: "ZapSticker",
+    subtitle: "Figurinhas para WhatsApp",
+    description:
+      "Crie figurinhas personalizadas a partir de fotos, vídeos, GIFs e Live Photos. Organize em pacotes e exporte direto para o WhatsApp.",
+    icon: "/assets/zapsticker-icon.png",
+    href: "/portfolio/zapsticker",
+    platforms: ["ios"],
+  },
 ];
 
 const Portfolio = () => {
