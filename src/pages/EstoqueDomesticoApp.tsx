@@ -91,6 +91,9 @@ const EstoqueDomesticoApp = () => {
                 dinheiro. Escaneie códigos de barras e receba alertas antes dos
                 produtos vencerem.
               </p>
+              <p className="text-hero-foreground/50 text-sm mt-3">
+                Requer iOS 18 ou superior
+              </p>
             </div>
           </div>
         </div>

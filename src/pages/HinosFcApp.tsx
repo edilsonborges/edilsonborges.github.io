@@ -3,12 +3,12 @@ import { FaApple } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
 import {
   ArrowLeft,
-  ScanBarcode,
-  Pill,
-  Bell,
-  Bot,
-  Users,
-  CloudCog,
+  Music,
+  Heart,
+  ListMusic,
+  Search,
+  Download,
+  Mic2,
   ShieldCheck,
   ExternalLink,
   Mail,
@@ -16,50 +16,50 @@ import {
 
 const features = [
   {
-    icon: ScanBarcode,
-    title: "Scanner Inteligente",
+    icon: Music,
+    title: "Hinos Oficiais",
     description:
-      "Escaneie o código de barras EAN-13 e o medicamento é identificado automaticamente via bases brasileiras.",
+      "Ouça os hinos oficiais dos maiores clubes do futebol brasileiro e europeu com áudio de alta qualidade.",
   },
   {
-    icon: Pill,
-    title: "Inventário Completo",
+    icon: Mic2,
+    title: "Letra Sincronizada",
     description:
-      "Cadastre medicamentos com nome, princípio ativo, quantidade, validade e local de armazenamento.",
+      "Acompanhe a letra do hino em tempo real, com destaque automático na linha que está tocando.",
   },
   {
-    icon: Bell,
-    title: "Alertas de Validade",
+    icon: Heart,
+    title: "Favoritos",
     description:
-      "Notificações automáticas para validade próxima, estoque baixo e medicamentos vencidos.",
+      "Marque seus hinos preferidos e acesse rapidamente a qualquer momento.",
   },
   {
-    icon: Bot,
-    title: "Assistente com IA",
+    icon: ListMusic,
+    title: "Playlists",
     description:
-      "Tire dúvidas sobre medicamentos com o assistente inteligente integrado ao app.",
+      "Crie playlists personalizadas com os hinos dos seus times favoritos.",
   },
   {
-    icon: Users,
-    title: "Perfis Familiares",
+    icon: Search,
+    title: "Busca por Clube",
     description:
-      "Associe medicamentos a cada membro da família e gerencie tratamentos individuais.",
+      "Encontre qualquer clube por nome, divisão ou estado com a busca integrada.",
   },
   {
-    icon: CloudCog,
-    title: "Sincronização iCloud",
+    icon: Download,
+    title: "Modo Offline",
     description:
-      "Seus dados sincronizam automaticamente entre seus dispositivos Apple via CloudKit.",
+      "Baixe hinos para ouvir sem conexão. Perfeito para o dia de jogo no estádio.",
   },
   {
     icon: ShieldCheck,
-    title: "Privacidade e Segurança",
+    title: "Privacidade Total",
     description:
-      "Dados armazenados localmente com SwiftData. Sincronização opcional e criptografada via iCloud.",
+      "Sem rastreamento, sem coleta de dados pessoais. Seus favoritos ficam só no seu dispositivo.",
   },
 ];
 
-const FarmaciaDomesticaApp = () => {
+const HinosFcApp = () => {
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -75,24 +75,24 @@ const FarmaciaDomesticaApp = () => {
 
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
             <img
-              src="/assets/farmacia-domestica-icon.png"
-              alt="Farmácia Doméstica App Icon"
+              src="/assets/hinos-fc-icon.png"
+              alt="Hinos FC App Icon"
               className="w-32 h-32 rounded-[1.75rem] shadow-glow"
             />
             <div className="text-center sm:text-left">
               <h1 className="text-4xl md:text-5xl font-bold text-hero-foreground">
-                Farmácia Doméstica
+                Hinos FC
               </h1>
               <p className="text-xl text-primary-glow mt-2">
-                Gestão de medicamentos em casa
+                Hinos de Clubes de Futebol
               </p>
               <p className="text-hero-foreground/70 mt-4 max-w-lg leading-relaxed">
-                Controle os medicamentos da sua casa com scanner de código de
-                barras, alertas de validade, assistente com IA e sincronização
-                familiar via iCloud.
+                Ouça os hinos oficiais dos maiores clubes de futebol do Brasil e
+                do mundo. Player com letra sincronizada, favoritos e playlists
+                personalizadas.
               </p>
               <p className="text-hero-foreground/50 text-sm mt-3">
-                Requer iOS 26 ou superior
+                Requer iOS 12 ou superior
               </p>
             </div>
           </div>
@@ -132,14 +132,14 @@ const FarmaciaDomesticaApp = () => {
             Política de Privacidade
           </h2>
           <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-            O Farmácia Doméstica armazena seus dados localmente com
-            sincronização opcional e criptografada via iCloud.
+            O Hinos FC não coleta dados pessoais. Seus favoritos e playlists
+            ficam armazenados apenas no seu dispositivo.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 max-w-md mx-auto">
             <Link
-              to="/portfolio/farmacia-domestica/privacy/ios"
-              data-umami-event="privacy-farmacia-domestica-ios"
+              to="/portfolio/hinos-fc/privacy/ios"
+              data-umami-event="privacy-hinos-fc-ios"
               className="bg-section rounded-2xl p-6 shadow-card hover:shadow-glow transition-smooth text-center"
             >
               <FaApple className="h-8 w-8 text-foreground mx-auto mb-2" />
@@ -170,7 +170,7 @@ const FarmaciaDomesticaApp = () => {
           </p>
           <a
             href="mailto:contato@edilson.dev"
-            data-umami-event="support-farmacia-domestica"
+            data-umami-event="support-hinos-fc"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-medium shadow-glow transition-smooth"
           >
             <Mail className="h-5 w-5" />
@@ -192,7 +192,7 @@ const FarmaciaDomesticaApp = () => {
                 URL de Marketing
               </p>
               <code className="text-xs text-muted-foreground break-all">
-                https://edilsonborges.github.io/portfolio/farmacia-domestica
+                https://edilsonborges.github.io/portfolio/hinos-fc
               </code>
             </div>
             <div className="bg-white rounded-xl p-4 shadow-card">
@@ -201,7 +201,7 @@ const FarmaciaDomesticaApp = () => {
                 URL de Suporte
               </p>
               <code className="text-xs text-muted-foreground break-all">
-                https://edilsonborges.github.io/portfolio/farmacia-domestica#support
+                https://edilsonborges.github.io/portfolio/hinos-fc#support
               </code>
             </div>
             <div className="bg-white rounded-xl p-4 shadow-card">
@@ -210,7 +210,7 @@ const FarmaciaDomesticaApp = () => {
                 Privacidade (iOS)
               </p>
               <code className="text-xs text-muted-foreground break-all">
-                https://edilsonborges.github.io/portfolio/farmacia-domestica/privacy/ios
+                https://edilsonborges.github.io/portfolio/hinos-fc/privacy/ios
               </code>
             </div>
           </div>
@@ -220,4 +220,4 @@ const FarmaciaDomesticaApp = () => {
   );
 };
 
-export default FarmaciaDomesticaApp;
+export default HinosFcApp;

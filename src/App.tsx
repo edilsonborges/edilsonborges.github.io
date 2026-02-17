@@ -14,6 +14,8 @@ import EstoqueDomesticoApp from "./pages/EstoqueDomesticoApp";
 import EstoqueDomesticoPrivacyIos from "./pages/EstoqueDomesticoPrivacyIos";
 import FarmaciaDomesticaApp from "./pages/FarmaciaDomesticaApp";
 import FarmaciaDomesticaPrivacyIos from "./pages/FarmaciaDomesticaPrivacyIos";
+import HinosFcApp from "./pages/HinosFcApp";
+import HinosFcPrivacyIos from "./pages/HinosFcPrivacyIos";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +40,9 @@ const App = () => (
           <Route path="/portfolio/farmacia-domestica" element={<FarmaciaDomesticaApp />} />
           <Route path="/portfolio/farmacia-domestica/privacy/ios" element={<FarmaciaDomesticaPrivacyIos />} />
           <Route path="/portfolio/farmacia-domestica/ios/privacy" element={<FarmaciaDomesticaPrivacyIos />} />
+          <Route path="/portfolio/hinos-fc" element={<HinosFcApp />} />
+          <Route path="/portfolio/hinos-fc/privacy/ios" element={<HinosFcPrivacyIos />} />
+          <Route path="/portfolio/hinos-fc/ios/privacy" element={<HinosFcPrivacyIos />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

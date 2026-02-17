@@ -60,6 +60,9 @@ jobs:
             "portfolio/farmacia-domestica"
             "portfolio/farmacia-domestica/privacy/ios"
             "portfolio/farmacia-domestica/ios/privacy"
+            "portfolio/hinos-fc"
+            "portfolio/hinos-fc/privacy/ios"
+            "portfolio/hinos-fc/ios/privacy"
           )
           for route in "${routes[@]}"; do
             mkdir -p "dist/$route"

@@ -31,6 +31,15 @@ const projects = [
     href: "/portfolio/farmacia-domestica",
     platforms: ["ios"],
   },
+  {
+    name: "Hinos FC",
+    subtitle: "Hinos de Clubes de Futebol",
+    description:
+      "Ouça os hinos oficiais dos maiores clubes de futebol do Brasil e do mundo. Player com letra sincronizada, favoritos e playlists.",
+    icon: "/assets/hinos-fc-icon.png",
+    href: "/portfolio/hinos-fc",
+    platforms: ["ios"],
+  },
 ];
 
 const Portfolio = () => {

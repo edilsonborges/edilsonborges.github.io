@@ -112,6 +112,9 @@ const NiverApp = () => {
                   Google Play
                 </a>
               </div>
+              <p className="text-hero-foreground/50 text-sm mt-3">
+                Requer iOS 18 ou superior · Android 8.0 ou superior
+              </p>
             </div>
           </div>
         </div>
