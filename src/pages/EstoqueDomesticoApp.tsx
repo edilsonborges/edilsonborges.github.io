@@ -7,7 +7,6 @@ import {
   Refrigerator,
   Bell,
   BarChart3,
-  MapPin,
   Users,
   ShieldCheck,
   ExternalLink,
@@ -40,12 +39,6 @@ const features = [
       "Acompanhe o que foi consumido e descartado, com porcentagem de desperdício por categoria.",
   },
   {
-    icon: MapPin,
-    title: "Lembretes de Localização",
-    description:
-      "Receba alertas com itens perto de vencer quando estiver próximo de um supermercado.",
-  },
-  {
     icon: Users,
     title: "Configuração Familiar",
     description:
@@ -55,7 +48,7 @@ const features = [
     icon: ShieldCheck,
     title: "Privacidade Total",
     description:
-      "100% offline. Sem rastreamento, sem coleta de dados. Seus itens ficam só no seu dispositivo.",
+      "O app não rastreia nem coleta seus dados. Suas informações ficam seguras no seu dispositivo e na sua conta pessoal.",
   },
 ];
 
@@ -92,7 +85,7 @@ const EstoqueDomesticoApp = () => {
                 produtos vencerem.
               </p>
               <p className="text-hero-foreground/50 text-sm mt-3">
-                Requer iOS 18 ou superior
+                Requer iOS 15 ou superior
               </p>
             </div>
           </div>
@@ -132,8 +125,8 @@ const EstoqueDomesticoApp = () => {
             Política de Privacidade
           </h2>
           <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-            O Estoque Doméstico é 100% offline. Sem rastreamento, sem coleta de
-            dados. Seus itens ficam só no seu dispositivo.
+            O app não rastreia nem coleta seus dados. Suas informações ficam
+            seguras no seu dispositivo e na sua conta pessoal.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 max-w-md mx-auto">

@@ -85,7 +85,7 @@ const Portfolio = () => {
               <img
                 src={project.icon}
                 alt={project.name}
-                className="w-20 h-20 rounded-2xl mb-4"
+                className="w-20 h-20 rounded-2xl mb-4 border-2 border-border"
               />
               <h2 className="text-xl font-bold text-foreground group-hover:text-primary transition-smooth">
                 {project.name}

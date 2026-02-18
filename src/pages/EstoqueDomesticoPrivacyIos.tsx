@@ -55,7 +55,24 @@ const EstoqueDomesticoPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            2. Dados acessados
+            2. Autenticação e conta
+          </h2>
+          <p>
+            O Estoque Doméstico oferece login via{" "}
+            <strong className="text-foreground">Iniciar sessão com a Apple</strong>{" "}
+            ou{" "}
+            <strong className="text-foreground">Iniciar sessão com o Google</strong>.
+            Ao criar uma conta, coletamos apenas as informações fornecidas pelo
+            provedor de autenticação (nome e e-mail) para identificar sua conta
+            e sincronizar seus dados.
+          </p>
+          <p>
+            Não armazenamos senhas. A autenticação é gerenciada inteiramente
+            pela Apple ou pelo Google.
+          </p>
+
+          <h2 className="text-xl font-semibold text-foreground mt-8">
+            3. Dados acessados
           </h2>
           <p>
             O Estoque Doméstico pode solicitar acesso às seguintes permissões:
@@ -71,12 +88,6 @@ const EstoqueDomesticoPrivacyIos = () => {
               enviar alertas locais sobre produtos próximos da data de validade.
               Os alertas são agendados localmente no seu dispositivo.
             </li>
-            <li>
-              <strong className="text-foreground">Localização:</strong> Para
-              enviar lembretes quando você estiver próximo de supermercados
-              cadastrados. O acesso é opcional e feito apenas em segundo plano
-              via geofencing.
-            </li>
           </ul>
           <p>
             Nenhuma dessas permissões é obrigatória. O app funciona normalmente
@@ -84,23 +95,24 @@ const EstoqueDomesticoPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            3. Armazenamento dos dados
+            4. Armazenamento dos dados
           </h2>
           <p>
-            Todos os dados do Estoque Doméstico são armazenados{" "}
+            Os dados do Estoque Doméstico (nomes de produtos, datas de validade,
+            quantidades e locais de armazenamento) são armazenados{" "}
             <strong className="text-foreground">
               localmente no seu dispositivo
-            </strong>
-            , utilizando SwiftData. Isso inclui nomes de produtos, datas de
-            validade, quantidades e locais de armazenamento.
+            </strong>{" "}
+            utilizando SwiftData e também sincronizados com a nuvem para
+            permitir backup e acesso entre dispositivos vinculados à sua conta.
           </p>
           <p>
-            Nenhum dado é enviado para servidores externos. Não existe conta de
-            usuário, login ou sincronização em nuvem.
+            Os dados na nuvem são associados exclusivamente à sua conta e não
+            são acessíveis por outros usuários.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            4. Consulta a bases de dados externas
+            5. Consulta a bases de dados externas
           </h2>
           <p>
             Ao escanear um código de barras, o app pode consultar a API pública
@@ -112,7 +124,7 @@ const EstoqueDomesticoPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            5. Compartilhamento com terceiros
+            6. Compartilhamento com terceiros
           </h2>
           <p>
             O Estoque Doméstico{" "}
@@ -124,7 +136,7 @@ const EstoqueDomesticoPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            6. Coleta de dados e analytics
+            7. Coleta de dados e analytics
           </h2>
           <p>
             O Estoque Doméstico{" "}
@@ -134,7 +146,7 @@ const EstoqueDomesticoPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            7. Tecnologia
+            8. Tecnologia
           </h2>
           <p>
             O Estoque Doméstico é desenvolvido nativamente com SwiftUI e
@@ -142,7 +154,43 @@ const EstoqueDomesticoPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            8. Privacidade de crianças
+            9. Exclusão de conta e dados
+          </h2>
+          <p>
+            Você pode solicitar a exclusão da sua conta e de todos os dados
+            associados a qualquer momento. Para isso, envie um e-mail para{" "}
+            <a
+              href="mailto:contato@edilson.dev"
+              className="text-primary hover:underline"
+            >
+              contato@edilson.dev
+            </a>{" "}
+            com o assunto{" "}
+            <strong className="text-foreground">
+              "Exclusão de conta — Estoque Doméstico"
+            </strong>
+            , informando o e-mail associado à sua conta.
+          </p>
+          <p>
+            Ao receber sua solicitação, iremos:
+          </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              Excluir permanentemente sua conta e todos os dados armazenados na
+              nuvem (produtos, configurações e informações de perfil).
+            </li>
+            <li>
+              Confirmar a exclusão por e-mail em até 7 dias úteis.
+            </li>
+          </ul>
+          <p>
+            Os dados armazenados localmente no seu dispositivo não são afetados
+            pela exclusão da conta na nuvem. Para removê-los, desinstale o
+            aplicativo.
+          </p>
+
+          <h2 className="text-xl font-semibold text-foreground mt-8">
+            10. Privacidade de crianças
           </h2>
           <p>
             O Estoque Doméstico não é direcionado a crianças menores de 13
@@ -152,7 +200,7 @@ const EstoqueDomesticoPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            9. Alterações nesta política
+            11. Alterações nesta política
           </h2>
           <p>
             Esta política de privacidade pode ser atualizada ocasionalmente.
@@ -161,7 +209,7 @@ const EstoqueDomesticoPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            10. Contato
+            12. Contato
           </h2>
           <p>
             Se você tiver dúvidas sobre esta política de privacidade, entre em
