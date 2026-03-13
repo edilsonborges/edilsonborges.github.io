@@ -87,6 +87,18 @@ const EstoqueDomesticoApp = () => {
               <p className="text-hero-foreground/50 text-sm mt-3">
                 Requer iOS 15 ou superior
               </p>
+              <div className="flex flex-wrap gap-4 mt-6 justify-center sm:justify-start">
+                <a
+                  href="https://apps.apple.com/br/app/estoque-dom%C3%A9stico/id6759167610"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-umami-event="download-estoque-domestico-ios"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-hero-foreground px-5 py-3 rounded-xl font-medium transition-smooth"
+                >
+                  <FaApple className="h-5 w-5" />
+                  App Store
+                </a>
+              </div>
             </div>
           </div>
         </div>
