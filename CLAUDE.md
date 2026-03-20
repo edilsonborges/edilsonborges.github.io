@@ -27,8 +27,9 @@ Node version: 20.19.0 (see `.nvmrc`)
 - `/portfolio/niver` → `src/pages/NiverApp.tsx` (Niver app marketing page: hero, features, privacy links, support)
 - `/portfolio/niver/privacy/ios` (+ `/portfolio/niver/ios/privacy`) → `src/pages/NiverPrivacyIos.tsx` (iOS privacy policy — SwiftUI/SwiftData)
 - `/portfolio/niver/privacy/android` (+ `/portfolio/niver/android/privacy`) → `src/pages/NiverPrivacyAndroid.tsx` (Android privacy policy — Room/SQLite)
-- `/portfolio/estoque-domestico` → `src/pages/EstoqueDomesticoApp.tsx` (Estoque Doméstico marketing page — iOS only, Android "em breve")
-- `/portfolio/estoque-domestico/privacy/ios` (+ `/portfolio/estoque-domestico/ios/privacy`) → `src/pages/EstoqueDomesticoPrivacyIos.tsx` (iOS privacy policy — SwiftUI/SwiftData)
+- `/portfolio/estoque-domestico` → `src/pages/EstoqueDomesticoApp.tsx` (Estoque Doméstico marketing page — iOS and Android, scanner de código de barras, scanner de nota fiscal, comparador de preços)
+- `/portfolio/estoque-domestico/privacy/ios` (+ `/portfolio/estoque-domestico/ios/privacy`) → `src/pages/EstoqueDomesticoPrivacyIos.tsx` (iOS privacy policy — SwiftUI/SwiftData, login Apple/Google, exclusão de conta)
+- `/portfolio/estoque-domestico/privacy/android` (+ `/portfolio/estoque-domestico/android/privacy`) → `src/pages/EstoqueDomesticoPrivacyAndroid.tsx` (Android privacy policy — Kotlin/Jetpack Compose/Room, login Google, exclusão de conta)
 - `/portfolio/farmacia-domestica` → `src/pages/FarmaciaDomesticaApp.tsx` (Farmácia Doméstica marketing page — iOS only, Android "em breve")
 - `/portfolio/farmacia-domestica/privacy/ios` (+ `/portfolio/farmacia-domestica/ios/privacy`) → `src/pages/FarmaciaDomesticaPrivacyIos.tsx` (iOS privacy policy — SwiftUI/SwiftData/CloudKit)
 - `/portfolio/hinos-fc` → `src/pages/HinosFcApp.tsx` (Hinos FC marketing page — iOS only, Android "em breve")
@@ -36,7 +37,13 @@ Node version: 20.19.0 (see `.nvmrc`)
 - `/portfolio/zapsticker` → `src/pages/ZapStickerApp.tsx` (ZapSticker marketing page — iOS only, Android "em breve")
 - `/portfolio/zapsticker/privacy/ios` (+ `/portfolio/zapsticker/ios/privacy`) → `src/pages/ZapStickerPrivacyIos.tsx` (iOS privacy policy — SwiftUI)
 
-**Portfolio pattern:** To add a new product to the portfolio, add an entry to the `projects` array in `src/pages/Portfolio.tsx`, create a product page in `src/pages/`, and register the route in `App.tsx`. Use `/portfolio/niver` as the reference implementation. A Claude Code command exists at `.claude/commands/new-portfolio-product.md` to automate this.
+**External portfolio items:** Some projects link externally instead of having internal pages:
+- Wololo Converter → `https://wololo.edilson.dev` (YouTube/Twitter video/audio downloader — web)
+- Markdown to PDF → `https://markdown-to-pdf.edilson.dev` (Markdown to PDF converter — web)
+
+These use `externalHref` instead of `href` in the `projects` array and open in a new tab.
+
+**Portfolio pattern:** To add a new product to the portfolio, add an entry to the `projects` array in `src/pages/Portfolio.tsx`, create a product page in `src/pages/`, and register the route in `App.tsx`. Use `/portfolio/niver` as the reference implementation. For web-only projects with external sites, use `externalHref` and `platforms: ["web"]`. A Claude Code command exists at `.claude/commands/new-portfolio-product.md` to automate this.
 
 **App assets:** Product icons and images go in `public/assets/` (e.g., `public/assets/niver-icon.png`). Referenced as `/assets/filename` in code.
 

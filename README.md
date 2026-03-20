@@ -98,7 +98,7 @@ Visit the live website: [edilsonborges.github.io](https://edilsonborges.github.i
    ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:5173` to view the website
+   Navigate to `http://localhost:8080` to view the website
 
 ### Available Scripts
 
@@ -108,12 +108,27 @@ Visit the live website: [edilsonborges.github.io](https://edilsonborges.github.i
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
+## Portfolio
+
+### Mobile Apps (iOS & Android)
+- **Estoque Doméstico** — Controle de validade e estoque de alimentos
+- **Niver** — Lembrete de aniversários
+
+### Mobile Apps (iOS)
+- **Farmácia Doméstica** — Gestão de medicamentos em casa
+- **Hinos FC** — Hinos de clubes de futebol
+- **ZapSticker** — Figurinhas para WhatsApp
+
+### Web Apps
+- **Markdown to PDF** — Conversor de Markdown para PDF
+- **Wololo Converter** — Download de vídeos e áudio do YouTube e Twitter
+
 ## Project Structure
 
 ```
 src/
 ├── components/          # React components
-│   ├── ui/             # Reusable UI components
+│   ├── ui/             # Reusable UI components (shadcn/ui)
 │   ├── Hero.tsx        # Hero section
 │   ├── About.tsx       # About section
 │   ├── Experience.tsx  # Professional experience
@@ -121,7 +136,7 @@ src/
 │   └── Contact.tsx     # Contact information
 ├── hooks/              # Custom React hooks
 ├── lib/                # Utility functions
-├── pages/              # Page components
+├── pages/              # Page components (portfolio, privacy policies, etc.)
 └── main.tsx           # Application entry point
 ```
 
@@ -146,7 +161,7 @@ This project is deployed on GitHub Pages and can be accessed at:
 
 ## Contact
 
-- **Email**: [hello@edilson.dev](mailto:hello@edilson.dev)
+- **Email**: [contato@edilson.dev](mailto:contato@edilson.dev)
 - **LinkedIn**: [in/edilsonborges](https://www.linkedin.com/in/edilsonborges)
 - **GitHub**: [edilsonborges](https://github.com/edilsonborges)
 - **Location**: Goiânia, Goiás, Brazil
