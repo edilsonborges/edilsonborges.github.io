@@ -236,6 +236,15 @@ const EstoqueDomesticoApp = () => {
                 https://edilsonborges.github.io/portfolio/estoque-domestico/privacy/ios
               </code>
             </div>
+            <div className="bg-white rounded-xl p-4 shadow-card">
+              <p className="font-medium text-foreground mb-2 flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-primary" />
+                Privacidade (Android)
+              </p>
+              <code className="text-xs text-muted-foreground break-all">
+                https://edilsonborges.github.io/portfolio/estoque-domestico/privacy/android
+              </code>
+            </div>
           </div>
         </div>
       </section>

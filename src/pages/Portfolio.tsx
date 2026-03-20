@@ -11,7 +11,7 @@ const projects = [
       "Controle os alimentos da sua casa, evite desperdício e economize dinheiro. Escaneie códigos de barras e receba alertas.",
     icon: "/assets/estoque-domestico-icon.png",
     href: "/portfolio/estoque-domestico",
-    platforms: ["ios"],
+    platforms: ["ios", "android"],
   },
   {
     name: "Niver",
