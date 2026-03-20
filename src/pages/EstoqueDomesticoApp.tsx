@@ -11,6 +11,8 @@ import {
   ShieldCheck,
   ExternalLink,
   Mail,
+  Receipt,
+  TrendingDown,
 } from "lucide-react";
 
 const features = [
@@ -19,6 +21,12 @@ const features = [
     title: "Scanner de Código de Barras",
     description:
       "Aponte a câmera e o produto é registrado instantaneamente com nome, marca e categoria.",
+  },
+  {
+    icon: Receipt,
+    title: "Scanner de Nota Fiscal",
+    description:
+      "Escaneie notas fiscais e registre todos os produtos de uma vez com preços, quantidades e validades.",
   },
   {
     icon: Refrigerator,
@@ -31,6 +39,12 @@ const features = [
     title: "Alertas de Validade",
     description:
       "Notificações configuráveis: 7 dias antes, 3 dias antes e no dia do vencimento.",
+  },
+  {
+    icon: TrendingDown,
+    title: "Comparador de Preços",
+    description:
+      "Compare o histórico de preços dos produtos e descubra onde você pagou mais barato.",
   },
   {
     icon: BarChart3,
@@ -81,8 +95,8 @@ const EstoqueDomesticoApp = () => {
               </p>
               <p className="text-hero-foreground/70 mt-4 max-w-lg leading-relaxed">
                 Controle os alimentos da sua casa, evite desperdício e economize
-                dinheiro. Escaneie códigos de barras e receba alertas antes dos
-                produtos vencerem.
+                dinheiro. Escaneie códigos de barras e notas fiscais, compare
+                preços e receba alertas antes dos produtos vencerem.
               </p>
               <p className="text-hero-foreground/50 text-sm mt-3">
                 Requer iOS 15 ou superior
@@ -153,13 +167,17 @@ const EstoqueDomesticoApp = () => {
                 iPhone e iPad
               </span>
             </Link>
-            <div className="bg-section rounded-2xl p-6 shadow-card text-center opacity-60">
+            <Link
+              to="/portfolio/estoque-domestico/privacy/android"
+              data-umami-event="privacy-estoque-domestico-android"
+              className="bg-section rounded-2xl p-6 shadow-card hover:shadow-glow transition-smooth text-center"
+            >
               <DiAndroid className="h-8 w-8 text-foreground mx-auto mb-2" />
               <span className="font-semibold text-foreground">Android</span>
               <span className="block text-sm text-muted-foreground mt-1">
-                Em breve
+                Smartphones e tablets
               </span>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

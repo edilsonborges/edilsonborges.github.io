@@ -12,6 +12,7 @@ import NiverPrivacyIos from "./pages/NiverPrivacyIos";
 import NiverPrivacyAndroid from "./pages/NiverPrivacyAndroid";
 import EstoqueDomesticoApp from "./pages/EstoqueDomesticoApp";
 import EstoqueDomesticoPrivacyIos from "./pages/EstoqueDomesticoPrivacyIos";
+import EstoqueDomesticoPrivacyAndroid from "./pages/EstoqueDomesticoPrivacyAndroid";
 import FarmaciaDomesticaApp from "./pages/FarmaciaDomesticaApp";
 import FarmaciaDomesticaPrivacyIos from "./pages/FarmaciaDomesticaPrivacyIos";
 import HinosFcApp from "./pages/HinosFcApp";
@@ -39,6 +40,8 @@ const App = () => (
           <Route path="/portfolio/estoque-domestico" element={<EstoqueDomesticoApp />} />
           <Route path="/portfolio/estoque-domestico/privacy/ios" element={<EstoqueDomesticoPrivacyIos />} />
           <Route path="/portfolio/estoque-domestico/ios/privacy" element={<EstoqueDomesticoPrivacyIos />} />
+          <Route path="/portfolio/estoque-domestico/privacy/android" element={<EstoqueDomesticoPrivacyAndroid />} />
+          <Route path="/portfolio/estoque-domestico/android/privacy" element={<EstoqueDomesticoPrivacyAndroid />} />
           <Route path="/portfolio/farmacia-domestica" element={<FarmaciaDomesticaApp />} />
           <Route path="/portfolio/farmacia-domestica/privacy/ios" element={<FarmaciaDomesticaPrivacyIos />} />
           <Route path="/portfolio/farmacia-domestica/ios/privacy" element={<FarmaciaDomesticaPrivacyIos />} />

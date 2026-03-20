@@ -57,6 +57,8 @@ jobs:
             "portfolio/estoque-domestico"
             "portfolio/estoque-domestico/privacy/ios"
             "portfolio/estoque-domestico/ios/privacy"
+            "portfolio/estoque-domestico/privacy/android"
+            "portfolio/estoque-domestico/android/privacy"
             "portfolio/farmacia-domestica"
             "portfolio/farmacia-domestica/privacy/ios"
             "portfolio/farmacia-domestica/ios/privacy"
