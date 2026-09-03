@@ -68,6 +68,9 @@ jobs:
             "portfolio/zapsticker"
             "portfolio/zapsticker/privacy/ios"
             "portfolio/zapsticker/ios/privacy"
+            "portfolio/quanto-paguei"
+            "portfolio/quanto-paguei/privacy/ios"
+            "portfolio/quanto-paguei/ios/privacy"
           )
           for route in "${routes[@]}"; do
             mkdir -p "dist/$route"

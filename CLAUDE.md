@@ -36,6 +36,8 @@ Node version: 20.19.0 (see `.nvmrc`)
 - `/portfolio/hinos-fc/privacy/ios` (+ `/portfolio/hinos-fc/ios/privacy`) → `src/pages/HinosFcPrivacyIos.tsx` (iOS privacy policy — UIKit/AVFoundation)
 - `/portfolio/zapsticker` → `src/pages/ZapStickerApp.tsx` (ZapSticker marketing page — iOS only, Android "em breve")
 - `/portfolio/zapsticker/privacy/ios` (+ `/portfolio/zapsticker/ios/privacy`) → `src/pages/ZapStickerPrivacyIos.tsx` (iOS privacy policy — SwiftUI)
+- `/portfolio/quanto-paguei` → `src/pages/QuantoPagueiApp.tsx` (Quanto Paguei marketing page — iOS only, Android "em breve"; scanner de QR Code da NFC-e e comparador de preços)
+- `/portfolio/quanto-paguei/privacy/ios` (+ `/portfolio/quanto-paguei/ios/privacy`) → `src/pages/QuantoPagueiPrivacyIos.tsx` (iOS privacy policy — SwiftUI/VisionKit, dados locais em JSON, servidor de consulta da NFC-e)
 
 **External portfolio items:** Some projects link externally instead of having internal pages:
 - Wololo Converter → `https://wololo.edilson.dev` (YouTube/Twitter video/audio downloader — web)

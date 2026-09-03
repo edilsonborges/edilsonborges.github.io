@@ -59,6 +59,15 @@ const projects = [
     platforms: ["ios"],
   },
   {
+    name: "Quanto Paguei",
+    subtitle: "Nota fiscal, preços e lojas",
+    description:
+      "Escaneie o QR Code da nota fiscal e descubra se pagou mais caro ou mais barato que da última vez — e em qual loja cada produto sai mais barato.",
+    icon: "/assets/quanto-paguei-icon.png",
+    href: "/portfolio/quanto-paguei",
+    platforms: ["ios"],
+  },
+  {
     name: "ZapSticker",
     subtitle: "Figurinhas para WhatsApp",
     description:

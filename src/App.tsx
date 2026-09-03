@@ -19,6 +19,8 @@ import HinosFcApp from "./pages/HinosFcApp";
 import HinosFcPrivacyIos from "./pages/HinosFcPrivacyIos";
 import ZapStickerApp from "./pages/ZapStickerApp";
 import ZapStickerPrivacyIos from "./pages/ZapStickerPrivacyIos";
+import QuantoPagueiApp from "./pages/QuantoPagueiApp";
+import QuantoPagueiPrivacyIos from "./pages/QuantoPagueiPrivacyIos";
 
 const queryClient = new QueryClient();
 
@@ -51,6 +53,9 @@ const App = () => (
           <Route path="/portfolio/zapsticker" element={<ZapStickerApp />} />
           <Route path="/portfolio/zapsticker/privacy/ios" element={<ZapStickerPrivacyIos />} />
           <Route path="/portfolio/zapsticker/ios/privacy" element={<ZapStickerPrivacyIos />} />
+          <Route path="/portfolio/quanto-paguei" element={<QuantoPagueiApp />} />
+          <Route path="/portfolio/quanto-paguei/privacy/ios" element={<QuantoPagueiPrivacyIos />} />
+          <Route path="/portfolio/quanto-paguei/ios/privacy" element={<QuantoPagueiPrivacyIos />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
