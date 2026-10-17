@@ -42,13 +42,25 @@ const features = [
     icon: Store,
     title: "Comparativo por loja",
     description:
-      "Descubra em qual mercado cada produto sai mais barato.",
+      "Compare os preços registrados por loja, com data e filtro de período.",
+  },
+  {
+    icon: ArrowDownUp,
+    title: "Compare embalagens",
+    description:
+      "Confira o custo por quilo, litro ou unidade entre tamanhos diferentes e variantes escolhidas por você.",
+  },
+  {
+    icon: ScanBarcode,
+    title: "Consulte antes de comprar",
+    description:
+      "Leia o código de um produto conhecido e compare o preço da prateleira com seu histórico. Anote preços sem somá-los aos gastos.",
   },
   {
     icon: ShieldCheck,
     title: "Seus dados, com você",
     description:
-      "Tudo fica no iPhone, sem cadastro e sem anúncios. Backup em JSON exportável.",
+      "Histórico no iPhone, sem cadastro e sem anúncios. Exporte e importe seu backup.",
   },
 ];
 
@@ -80,9 +92,9 @@ const QuantoPagueiApp = () => {
                 Nota fiscal, preços e lojas
               </p>
               <p className="text-hero-foreground/70 mt-4 max-w-lg leading-relaxed">
-                Escaneie o QR Code da nota fiscal e descubra se pagou mais caro
-                ou mais barato que da última vez — e em qual loja cada produto
-                sai mais barato.
+                Consulte o que você já pagou antes de comprar de novo.
+                Guarde notas fiscais, compare o preço da prateleira com seu
+                histórico e confira o custo por quilo, litro ou unidade.
               </p>
               <p className="text-hero-foreground/50 text-sm mt-3">
                 Requer iOS 18 ou superior
@@ -137,8 +149,9 @@ const QuantoPagueiApp = () => {
             Política de Privacidade
           </h2>
           <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-            O Quanto Paguei guarda suas compras apenas no seu iPhone, sem conta
-            e sem anúncios.
+            Seu histórico fica no iPhone, sem cadastro e sem anúncios.
+            Ao importar uma NFC-e, o link e os dados da nota passam pelo
+            servidor de consulta. A política explica esse processamento.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 max-w-md mx-auto">
@@ -197,7 +210,7 @@ const QuantoPagueiApp = () => {
                 URL de Marketing
               </p>
               <code className="text-xs text-muted-foreground break-all">
-                https://edilsonborges.github.io/portfolio/quanto-paguei
+                https://edilson.dev/portfolio/quanto-paguei
               </code>
             </div>
             <div className="bg-white rounded-xl p-4 shadow-card">
@@ -206,7 +219,7 @@ const QuantoPagueiApp = () => {
                 URL de Suporte
               </p>
               <code className="text-xs text-muted-foreground break-all">
-                https://edilsonborges.github.io/portfolio/quanto-paguei#support
+                https://edilson.dev/portfolio/quanto-paguei#support
               </code>
             </div>
             <div className="bg-white rounded-xl p-4 shadow-card">
@@ -215,7 +228,7 @@ const QuantoPagueiApp = () => {
                 Privacidade (iOS)
               </p>
               <code className="text-xs text-muted-foreground break-all">
-                https://edilsonborges.github.io/portfolio/quanto-paguei/privacy/ios
+                https://edilson.dev/portfolio/quanto-paguei/privacy/ios
               </code>
             </div>
           </div>

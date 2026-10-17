@@ -35,7 +35,7 @@ const QuantoPagueiPrivacyIos = () => {
         <div className="max-w-3xl mx-auto prose prose-gray max-w-none space-y-6 text-muted-foreground leading-relaxed">
           <p>
             <strong className="text-foreground">Última atualização:</strong>{" "}
-            setembro de 2026
+            17 de outubro de 2026
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
@@ -73,9 +73,15 @@ const QuantoPagueiPrivacyIos = () => {
             </li>
           </ul>
           <p>
-            O CPF que eventualmente aparece na nota já vem{" "}
-            <strong className="text-foreground">mascarado</strong> da própria
-            SEFAZ — o app e o servidor não têm acesso ao número completo.
+            A consulta pode conter identificação do destinatário, como nome e
+            CPF, conforme o que a SEFAZ disponibiliza. Alguns estados mascaram
+            esses dados. O serviço não garante que todas as notas venham sem
+            identificação. O HTML e os dados consultados podem ficar no cache.
+          </p>
+          <p>
+            O servidor também registra o IP de origem, o identificador técnico
+            do aplicativo ou navegador (user-agent), o resultado da consulta e
+            o tempo de processamento para operar e diagnosticar o serviço.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
@@ -86,12 +92,14 @@ const QuantoPagueiPrivacyIos = () => {
             <strong className="text-foreground">
               localmente no seu aparelho
             </strong>
-            , em arquivos JSON no espaço do próprio aplicativo. Nada é enviado
-            para nuvem ou servidores de armazenamento.
+            , em arquivos JSON no espaço do próprio aplicativo. Preços
+            registrados manualmente, favoritos, preços desejados, vínculos e
+            grupos não são sincronizados com um serviço de conta. As notas
+            importadas passam pelo servidor descrito na seção anterior.
           </p>
           <p>
-            O backup dos dados só existe quando você mesmo o exporta, e o
-            arquivo gerado fica sob seu controle — você decide onde guardá-lo.
+            Você pode exportar e importar um arquivo de backup. O arquivo fica
+            sob seu controle e você decide onde guardá-lo.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
@@ -101,29 +109,46 @@ const QuantoPagueiPrivacyIos = () => {
             Para completar o nome e a marca dos produtos, o app consulta o{" "}
             <strong className="text-foreground">Open Food Facts</strong> a
             partir do código de barras (EAN) de cada item. Apenas o código de
-            barras é enviado nessa consulta — nenhum dado pessoal é
-            transmitido.
+            barras é enviado nessa consulta. O serviço consultado também recebe
+            dados técnicos da conexão, como o endereço IP. A busca pode usar o
+            servidor configurado no app ou a API pública do Open Food Facts.
+            Consulte também a política de privacidade do serviço em
+            openfoodfacts.org.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
             5. Compartilhamento com terceiros
           </h2>
           <p>
-            O Quanto Paguei{" "}
-            <strong className="text-foreground">
-              não compartilha, vende ou transfere
-            </strong>{" "}
-            nenhum dado para terceiros.
+            O link da nota é enviado ao servidor de NFC-e, que acessa a SEFAZ.
+            A consulta de nomes e marcas usa o Open Food Facts. Não vendemos
+            seus dados nem os usamos para publicidade ou rastreamento entre
+            aplicativos. Ao exportar um backup, você escolhe o destino e o
+            serviço usado para compartilhar o arquivo.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
             6. Coleta de dados e analytics
           </h2>
           <p>
-            O Quanto Paguei{" "}
-            <strong className="text-foreground">não utiliza</strong> ferramentas
-            de analytics, rastreamento ou coleta de dados. Não há SDKs de
-            terceiros para publicidade ou análise de comportamento.
+            Não há SDK de publicidade, analytics ou rastreamento no app.
+            A coleta no servidor se limita às consultas e aos registros
+            técnicos descritos nesta política, para o funcionamento do serviço.
+          </p>
+          <p>
+            Os dados locais ficam até você apagá-los pelo app ou remover o
+            aplicativo. Backups exportados precisam ser apagados no destino em
+            que foram salvos. O backup do próprio iPhone pode incluir os dados
+            do app, conforme seus ajustes do iOS.
+          </p>
+          <p>
+            O cache de notas e os registros do servidor não têm exclusão
+            automática por prazo. Apagar dados no iPhone não apaga esse cache.
+            Você pode solicitar acesso ou exclusão pelo e-mail
+            contato@edilson.dev, informando a chave ou o link da nota para
+            localizar o registro. Não envie senhas ou documentos pessoais por
+            e-mail. Se usar outro servidor nos ajustes, a retenção e a exclusão
+            ficam sujeitas às regras do responsável por esse servidor.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
