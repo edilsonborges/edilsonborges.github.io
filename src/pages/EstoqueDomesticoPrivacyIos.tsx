@@ -7,7 +7,7 @@ const sections = [
     "Usamos os dados necessários para executar o serviço solicitado, proteger as contas e atender pedidos e obrigações aplicáveis. Recursos opcionais usam as informações que você escolhe fornecer e as permissões concedidas no iOS. Não vendemos seus dados nem usamos rastreamento entre aplicativos para publicidade."
   ]},
   { title: "2. Informações tratadas", paragraphs: [
-    "A conta Firebase pode conter identificador, nome, e-mail, foto, provedor de login Apple ou Google, criação da conta e últimos eventos de autenticação disponíveis. Não recebemos sua senha da Apple ou do Google.",
+    "A conta Firebase pode conter identificador, nome, e-mail, foto, provedor de login Apple ou Google, criação da conta e últimos eventos de autenticação disponíveis. Ao escolher Continuar sem conta, o Firebase cria uma sessão anônima com identificador próprio para associar seus dados. Essa sessão e seus dados também podem ser excluídos pelo app. Não recebemos sua senha da Apple ou do Google.",
     "Registramos os dados inseridos no app: estoque, validade, quantidades, preços, consumo, descarte, perfil da casa, locais salvos e suas coordenadas, notificações e feedback. Perfis antigos também podem conter restrições alimentares informadas pelo usuário.",
     "As notas fiscais podem conter URL ou chave de consulta, produtos, valores, estabelecimento e, quando presentes no documento consultado, nome e CPF do destinatário. Não é necessário informar CPF para criar uma conta."
   ]},
