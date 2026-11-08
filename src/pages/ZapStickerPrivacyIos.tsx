@@ -25,7 +25,7 @@ const ZapStickerPrivacyIos = () => {
             </h1>
           </div>
           <p className="text-hero-foreground/60">
-            ZapSticker para iOS (iPhone e iPad)
+            ZapSticker para iPhone
           </p>
         </div>
       </section>
@@ -34,8 +34,8 @@ const ZapStickerPrivacyIos = () => {
       <section className="px-4 py-16 bg-white">
         <div className="max-w-3xl mx-auto prose prose-gray max-w-none space-y-6 text-muted-foreground leading-relaxed">
           <p>
-            <strong className="text-foreground">Última atualização:</strong>{" "}
-            fevereiro de 2026
+            <strong className="text-foreground">Última atualização</strong>{" "}
+            em 7 de novembro de 2026
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
@@ -65,8 +65,8 @@ const ZapStickerPrivacyIos = () => {
             </li>
           </ul>
           <p>
-            Nenhuma permissão é obrigatória. O app funciona normalmente sem
-            ela — você pode buscar GIFs diretamente no app.
+            Você escolhe quais mídias importar. Se conceder acesso à biblioteca
+            de fotos, poderá alterá-lo nos Ajustes do iPhone.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
@@ -83,33 +83,26 @@ const ZapStickerPrivacyIos = () => {
           <p>
             Não existe conta de usuário, login ou sincronização em nuvem.
           </p>
-
-          <h2 className="text-xl font-semibold text-foreground mt-8">
-            4. Consulta a serviços externos
-          </h2>
           <p>
-            O recurso de busca de GIFs pode consultar as APIs públicas do{" "}
-            <strong className="text-foreground">Tenor</strong> e do{" "}
-            <strong className="text-foreground">Giphy</strong> para pesquisar
-            GIFs. Apenas o termo de busca é enviado nessas consultas — nenhum
-            dado pessoal é transmitido.
+            As figurinhas e os pacotes ficam armazenados até você removê-los
+            pelo app. Apagar o aplicativo pelo iPhone remove os dados locais
+            do ZapSticker. Para excluir pacotes já importados no WhatsApp,
+            use os controles do WhatsApp.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            5. Compartilhamento com terceiros
+            4. Compartilhamento com o WhatsApp
           </h2>
           <p>
-            O ZapSticker{" "}
-            <strong className="text-foreground">
-              não compartilha, vende ou transfere
-            </strong>{" "}
-            nenhum dado pessoal para terceiros. A exportação de figurinhas para
-            o WhatsApp é feita localmente via protocolo de pasteboard, sem
-            passar por servidores intermediários.
+            Ao tocar em Enviar para WhatsApp, você compartilha com o WhatsApp
+            as figurinhas e os dados do pacote, como o nome e o publicador.
+            O ZapSticker entrega o pacote pela área de transferência do iPhone.
+            O uso das figurinhas dentro do WhatsApp segue a política de
+            privacidade desse serviço.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            6. Coleta de dados e analytics
+            5. Coleta de dados e analytics
           </h2>
           <p>
             O ZapSticker{" "}
@@ -119,7 +112,7 @@ const ZapStickerPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            7. Tecnologia
+            6. Tecnologia
           </h2>
           <p>
             O ZapSticker é desenvolvido nativamente com SwiftUI, sem
@@ -130,17 +123,15 @@ const ZapStickerPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            8. Privacidade de crianças
+            7. Privacidade de crianças
           </h2>
           <p>
             O ZapSticker não é direcionado a crianças menores de 13 anos. O
             aplicativo não coleta intencionalmente informações de crianças.
-            Como nenhum dado pessoal é transmitido para fora do dispositivo,
-            não há risco de exposição de dados de menores.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            9. Alterações nesta política
+            8. Alterações nesta política
           </h2>
           <p>
             Esta política de privacidade pode ser atualizada ocasionalmente.
@@ -149,11 +140,11 @@ const ZapStickerPrivacyIos = () => {
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">
-            10. Contato
+            9. Contato
           </h2>
           <p>
-            Se você tiver dúvidas sobre esta política de privacidade, entre em
-            contato:
+            Para tirar dúvidas sobre esta política de privacidade, entre em
+            contato pelo e-mail abaixo.
           </p>
           <div className="bg-section rounded-xl p-6 mt-4">
             <p className="text-foreground font-medium">
