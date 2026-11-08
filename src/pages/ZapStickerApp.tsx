@@ -8,7 +8,6 @@ import {
   Scissors,
   Package,
   Send,
-  Search,
   ShieldCheck,
   ExternalLink,
   Mail,
@@ -34,12 +33,6 @@ const features = [
       "Crie stickers animados a partir de vídeos e GIFs com extração de frames a 24 FPS.",
   },
   {
-    icon: Search,
-    title: "Busca de GIFs",
-    description:
-      "Pesquise GIFs diretamente no app via Tenor e Giphy para criar figurinhas rapidamente.",
-  },
-  {
     icon: Package,
     title: "Pacotes Organizados",
     description:
@@ -55,7 +48,7 @@ const features = [
     icon: ShieldCheck,
     title: "Privacidade Total",
     description:
-      "100% offline. Sem rastreamento, sem coleta de dados. Suas figurinhas ficam só no seu dispositivo.",
+      "Crie e organize suas figurinhas no iPhone. O ZapSticker não coleta dados nem usa rastreadores.",
   },
 ];
 
@@ -92,7 +85,7 @@ const ZapStickerApp = () => {
                 WhatsApp.
               </p>
               <p className="text-hero-foreground/50 text-sm mt-3">
-                Requer iOS 17 ou superior
+                Requer iOS 16 ou superior
               </p>
             </div>
           </div>
@@ -132,8 +125,8 @@ const ZapStickerApp = () => {
             Política de Privacidade
           </h2>
           <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-            O ZapSticker é 100% offline. Sem rastreamento, sem coleta de dados.
-            Suas figurinhas ficam só no seu dispositivo.
+            O ZapSticker processa e armazena suas figurinhas no iPhone.
+            Você escolhe quais pacotes enviar ao WhatsApp.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 max-w-md mx-auto">
@@ -145,7 +138,7 @@ const ZapStickerApp = () => {
               <FaApple className="h-8 w-8 text-foreground mx-auto mb-2" />
               <span className="font-semibold text-foreground">iOS</span>
               <span className="block text-sm text-muted-foreground mt-1">
-                iPhone e iPad
+                iPhone
               </span>
             </Link>
             <div className="bg-section rounded-2xl p-6 shadow-card text-center opacity-60">
@@ -192,7 +185,7 @@ const ZapStickerApp = () => {
                 URL de Marketing
               </p>
               <code className="text-xs text-muted-foreground break-all">
-                https://edilsonborges.github.io/portfolio/zapsticker
+                https://edilson.dev/portfolio/zapsticker/
               </code>
             </div>
             <div className="bg-white rounded-xl p-4 shadow-card">
@@ -201,7 +194,7 @@ const ZapStickerApp = () => {
                 URL de Suporte
               </p>
               <code className="text-xs text-muted-foreground break-all">
-                https://edilsonborges.github.io/portfolio/zapsticker#support
+                https://edilson.dev/portfolio/zapsticker/#support
               </code>
             </div>
             <div className="bg-white rounded-xl p-4 shadow-card">
@@ -210,7 +203,7 @@ const ZapStickerApp = () => {
                 Privacidade (iOS)
               </p>
               <code className="text-xs text-muted-foreground break-all">
-                https://edilsonborges.github.io/portfolio/zapsticker/privacy/ios
+                https://edilson.dev/portfolio/zapsticker/privacy/ios/
               </code>
             </div>
           </div>
