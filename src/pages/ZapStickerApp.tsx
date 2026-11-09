@@ -125,7 +125,7 @@ const ZapStickerApp = () => {
             Política de Privacidade
           </h2>
           <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-            O ZapSticker processa e armazena suas figurinhas no iPhone.
+            O ZapSticker processa e armazena suas figurinhas no seu aparelho.
             Você escolhe quais pacotes enviar ao WhatsApp.
           </p>
 
@@ -141,13 +141,16 @@ const ZapStickerApp = () => {
                 iPhone
               </span>
             </Link>
-            <div className="bg-section rounded-2xl p-6 shadow-card text-center opacity-60">
+            <a
+              href="/portfolio/zapsticker/privacy/android/"
+              className="bg-section rounded-2xl p-6 shadow-card hover:shadow-glow transition-smooth text-center"
+            >
               <DiAndroid className="h-8 w-8 text-foreground mx-auto mb-2" />
               <span className="font-semibold text-foreground">Android</span>
               <span className="block text-sm text-muted-foreground mt-1">
-                Em breve
+                Política de privacidade
               </span>
-            </div>
+            </a>
           </div>
         </div>
       </section>
